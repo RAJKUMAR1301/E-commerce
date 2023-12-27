@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsCartCheckFill } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const Navbar = () => {
@@ -20,7 +19,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/cart">
             <div className="relative" >
-              <BsCartCheckFill  className=" text-2xl"/>
               {
                 cart.length>0 && <span className="absolute -top-1 -right-2 bg-green-600 text-xs w-5 h-5 flex justify-center items-center  animate-bounce rounded-full text-white">
                      {cart.length}
